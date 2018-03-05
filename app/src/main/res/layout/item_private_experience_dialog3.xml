@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/divider_line_bottom"
+    android:layout_marginBottom="10dp"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/private_experience_image"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image_dialog3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/private_experience_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left|bottom"
+                android:maxLines="1"
+                android:text="送给自己"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/private_experience_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left|bottom"
+                android:maxLines="1"
+                android:text="5月04日"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/private_experience_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:gravity="left|bottom"
+                android:text="        人生的道路是坎坷的，从来就没有平坦的大道更没有顺畅的柏油路，只有那弯弯小径和陡峭湿滑的山路。我要要告诉你，希望不可能是凭空出现的，它是在探索中孕育的；成功不是就摆在你面前的，它是在拼搏中聚积，从失败中获得的。"
+                android:textColor="#808080"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

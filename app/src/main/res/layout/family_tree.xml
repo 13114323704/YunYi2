@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <LinearLayout
+                android:id="@+id/item_family_tree1_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <include
+                    android:id="@+id/item_family_tree1"
+                    layout="@layout/item_family_tree3" />
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/item_family_tree1_layout"
+                android:layout_centerHorizontal="true"
+                android:background="#000000" />-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/item_family_tree2_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <include
+                        android:id="@+id/item_family_tree2"
+                        layout="@layout/item_family_tree3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_family_tree2_layout"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="40.5dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.87"
+                    android:background="@drawable/divider_line_right_darker_new" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/item_family_tree3_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <include
+                        android:id="@+id/item_family_tree3"
+                        layout="@layout/item_family_tree2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/item_family_tree3_layout"
+                    android:layout_centerHorizontal="true"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="32dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="23dp"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#000000"
+                    android:layout_marginStart="23dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--<View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/item_family_tree4_layout"
+                        android:layout_centerHorizontal="true"
+                        android:background="#000000" />-->
+
+                    <LinearLayout
+                        android:id="@+id/item_family_tree4_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+
+                        <include
+                            android:id="@+id/item_family_tree4"
+                            layout="@layout/item_family_tree2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/item_family_tree4_layout"
+                        android:layout_centerHorizontal="true"
+                        android:background="#000000" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="22dp"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/item_family_tree5_layout"
+                            android:layout_centerHorizontal="true"
+                            android:background="#000000" />
+
+                        <LinearLayout
+                            android:id="@+id/item_family_tree5_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <include
+                                android:id="@+id/item_family_tree5"
+                                layout="@layout/item_family_tree3" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/item_family_tree5_layout"
+                            android:layout_centerHorizontal="true"
+                            android:background="#000000" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/item_family_tree6_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                            <LinearLayout
+                                android:id="@+id/item_family_tree6_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <include
+                                    android:id="@+id/item_family_tree6"
+                                    layout="@layout/item_family_tree2" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_family_tree6_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="22dp"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/item_family_tree7_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                            <LinearLayout
+                                android:id="@+id/item_family_tree7_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <include
+                                    android:id="@+id/item_family_tree7"
+                                    layout="@layout/item_family_tree2" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_family_tree7_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical">
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="29dp"
+                            android:background="#000000"
+                            android:layout_gravity="center_horizontal"/>
+                        <include
+                            android:id="@+id/item_family_tree8"
+                            layout="@layout/item_family_tree" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="22dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="29dp"
+                        android:background="#000000"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <include
+                        android:id="@+id/item_family_tree9"
+                        layout="@layout/item_family_tree2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="22dp"
+                    android:background="#000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/item_family_tree10_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                            <LinearLayout
+                                android:id="@+id/item_family_tree10_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <include
+                                    android:id="@+id/item_family_tree10"
+                                    layout="@layout/item_family_tree2" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_family_tree10_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/item_family_tree11_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                            <LinearLayout
+                                android:id="@+id/item_family_tree11_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+
+                                <include
+                                    android:id="@+id/item_family_tree11"
+                                    layout="@layout/item_family_tree" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_family_tree11_layout"
+                                android:layout_centerHorizontal="true"
+                                android:background="#000000" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginStart="23dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000"
+                        android:layout_marginStart="23dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000"
+                        android:layout_marginStart="46dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000"
+                        android:layout_marginLeft="46dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree12"
+                            layout="@layout/item_family_tree" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree13"
+                            layout="@layout/item_family_tree2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree14"
+                            layout="@layout/item_family_tree2" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="23dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="#000000"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="46dp"
+                        android:background="#000000"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="46dp"
+                        android:background="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree15"
+                            layout="@layout/item_family_tree2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree16"
+                            layout="@layout/item_family_tree" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <include
+                            android:id="@+id/item_family_tree17"
+                            layout="@layout/item_family_tree" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="17dp"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="23dp"
+                    android:background="#000000"
+                    android:layout_marginLeft="22dp"/>
+
+                <include
+                    android:id="@+id/item_family_tree18"
+                    layout="@layout/item_family_tree" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="image_back"
+            android:padding="5dp"
+            android:src="@mipmap/back_black" />
+
+        <Button
+            android:id="@+id/title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:text="创建个人词条"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/title_layout_top_divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/name_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/name_label" />
+
+                <EditText
+                    android:id="@+id/editext_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/name_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="亲人名字"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/motto_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/motto_label" />
+
+                <EditText
+                    android:id="@+id/edittext_motto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/motto_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="亲人生平格言"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/birth_date_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/birth_date" />
+
+                <EditText
+                    android:id="@+id/edittext_birth_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/birth_date_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="出生日期"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/died_date_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/died_date" />
+
+                <EditText
+                    android:id="@+id/edittext_died_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/died_date_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="逝世日期"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/relation_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/relation_label" />
+
+                <Spinner
+                    android:id="@+id/relation_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/relation_label"
+                    android:entries="@array/relations"
+                    android:spinnerMode="dropdown" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/education_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/education" />
+
+                <EditText
+                    android:id="@+id/edittext_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/education_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="亲人毕业院校"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/divider_line_bottom">
+
+                <ImageView
+                    android:id="@+id/job_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/job" />
+
+                <EditText
+                    android:id="@+id/edittext_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/job_label"
+                    android:background="#FFFFFFFF"
+                    android:hint="亲人职业"
+                    android:textColorHint="#DCDCDC"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#FFFFFFFF">
+
+                <ImageView
+                    android:id="@+id/detailinfo_label"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@mipmap/detailinfo_label" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/detailinfo_label"
+                    android:hint="生平简介"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edittext_detailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_stroke_bg"
+                android:gravity="top"
+                android:hint="在这里输入亲人的生平简介"
+                android:padding="8dp"
+                android:textColorHint="#DCDCDC"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_create_bg"
+                android:onClick="create"
+                android:text="创建"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

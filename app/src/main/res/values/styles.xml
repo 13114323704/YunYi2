@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="dialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 该属性去掉dialog 背景  如果设置圆角 就会去掉圆角阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 对话框背景 -->
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <!-- 设置dialog弹出时背景是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否在悬浮Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 该属性去掉dialog 背景  如果设置圆角 就会去掉圆角阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 点外边可以消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="TabTextSize">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

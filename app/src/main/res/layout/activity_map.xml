@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_getinfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="btn_getinfo"
+            android:text="存储为先辈安葬地点"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:onClick="exit_before"
+                android:src="@mipmap/exit_icon" />
+
+            <AutoCompleteTextView
+                android:id="@+id/searchkey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="6"
+                android:background="@drawable/edittext_default_bg"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="输入地点名"
+                android:maxLines="1"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#A9A9A9"
+                android:textCursorDrawable="@drawable/edittext_cursor">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:onClick="searchButtonProcess"
+                android:src="@mipmap/search2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/float_button_initlocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/btn_getinfo"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/float_button_bg"
+            android:onClick="float_button"
+            android:padding="7dp"
+            android:src="@mipmap/init_location" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

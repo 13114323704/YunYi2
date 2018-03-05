@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/divider_line_bottom">
+
+    <ImageView
+        android:id="@+id/message_public_label"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="15dp"
+        android:src="@mipmap/helper_label2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/message_public_label"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="疑似走散家族提醒"
+                android:textColor="#CC000000"
+                android:gravity="center"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:gravity="right|center_vertical"
+                android:paddingRight="15dp"
+                android:textColor="#A9A9A9"
+                android:text="中午12:00"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="#A9A9A9"
+            android:gravity="left|center_vertical"
+            android:paddingRight="15dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="泰和李氏家族可能和您的家族为走散的家族哦，快点我查看吧！"/>
+    </LinearLayout>
+
+</RelativeLayout>

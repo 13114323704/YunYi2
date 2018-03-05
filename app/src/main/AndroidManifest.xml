@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hq.yunyi2">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 百度API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- 即时通讯所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon_default"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="23IL7I2QKY9dwvZ9Y3IMmESfR0keEhYe" />
+
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".FamilyCircleActivity"/>
+        <activity android:name=".PrivateInfoActivity"/>
+        <activity android:name=".PrivateInfoDetailActivity"/>
+        <activity android:name=".CreatePrivateInfoActivity"/>
+        <activity android:name=".QRcodeActivity"/>
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".SearchMapActivity"/>
+        <activity android:name=".MemoryHallActivity"/>
+        <activity android:name=".PrivateCenterActivity"/>
+        <activity android:name=".ChatHomeActivity"/>
+        <activity android:name=".PrivateExperienceActivity"/>
+        <activity android:name=".PrivateExperienceDetailinfoActivity"/>
+        <activity android:name=".CreatePrivateExperienceActivity"/>
+        <activity android:name=".AncestorInfoActivity"/>
+        <activity android:name=".ProtectActivity"/>
+        <activity android:name=".FamilyWayActivity"/>
+        <activity android:name=".CreateFamilyWayActivity"/>
+        <activity android:name=".AnimalMemoryActivity"/>
+        <activity android:name=".SpecialCommunityActivity"/>
+        <activity android:name=".MessageActivity"/>
+        <activity android:name=".ServiceListActivity"/>
+        <activity android:name=".CreateAncestorInfoActivity"/>
+        <activity android:name=".TimeRecordActivity"/>
+        <activity android:name=".TimeRecordDetailActivity"/>
+
+        <activity android:name=".ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.hq.yunyi2"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <service android:name=".service.MusicService"/>
+
+    </application>
+
+</manifest>

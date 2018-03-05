@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="image_back"
+            android:padding="5dp"
+            android:src="@mipmap/back_black" />
+
+        <Button
+            android:id="@+id/title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:text="特殊人群社区"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/title_layout_top_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout">
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            app:refreshType="material">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/divider_line_bottom">
+
+                    <ImageView
+                        android:id="@+id/label1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/special_man1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/textview_right"
+                        android:layout_toRightOf="@+id/label1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="1"
+                            android:textColor="#000000"
+                            android:paddingEnd="10dp"
+                            android:text="失独人群"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="end"
+                            android:gravity="left|top"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:text="关注1002万，话题30万"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="60新话题"
+                        android:textSize="17sp"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/divider_line_bottom">
+
+                    <ImageView
+                        android:id="@+id/label2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/special_man2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/label2"
+                        android:layout_toLeftOf="@+id/textview_right2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="1"
+                            android:paddingEnd="10dp"
+                            android:textColor="#000000"
+                            android:text="独孤老人"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="end"
+                            android:gravity="left|top"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:text="关注800万，话题45万"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_right2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="99+新话题"
+                        android:textSize="17sp"
+                        android:paddingEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/divider_line_bottom">
+
+                    <ImageView
+                        android:id="@+id/label3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/special_man3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/label3"
+                        android:layout_toLeftOf="@+id/textview_right3"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="1"
+                            android:paddingEnd="10dp"
+                            android:text="留守儿童"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="end"
+                            android:gravity="left|top"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:text="关注900万，话题90万"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textview_right3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="99+新话题"
+                        android:textSize="17sp"
+                        android:paddingEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/divider_line_bottom">
+
+                    <ImageView
+                        android:id="@+id/label4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/special_man4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/textview_right4"
+                        android:layout_toRightOf="@+id/label4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="1"
+                            android:textColor="#000000"
+                            android:paddingEnd="10dp"
+                            android:text="伤残军人"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="end"
+                            android:gravity="left|top"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:text="关注502万，话题63万"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_right4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="45新话题"
+                        android:textSize="17sp"
+                        android:paddingEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/divider_line_bottom">
+
+                    <ImageView
+                        android:id="@+id/label5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@mipmap/special_man5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/textview_right5"
+                        android:layout_toRightOf="@+id/label5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="1"
+                            android:textColor="#000000"
+                            android:paddingEnd="10dp"
+                            android:text="烈士家属"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:ellipsize="end"
+                            android:gravity="left|top"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:text="关注752万，话题150万"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview_right5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="79新话题"
+                        android:textSize="17sp"
+                        android:paddingEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </com.baoyz.widget.PullRefreshLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

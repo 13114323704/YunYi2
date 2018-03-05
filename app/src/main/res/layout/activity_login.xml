@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_login_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/app_name" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg2"
+                android:orientation="vertical"
+                android:paddingTop="80dp">
+
+                <EditText
+                    android:id="@+id/editText_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:hint="请输入用户名"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:background="@drawable/edittext_default_bg"
+                    android:maxLines="1"
+                    android:textColorHint="#DCDCDC" />
+
+                <EditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:background="@drawable/edittext_default_bg"
+                    android:gravity="center"
+                    android:hint="请输入密码"
+                    android:maxLines="1"
+                    android:textColorHint="#DCDCDC" />
+
+            </LinearLayout>
+
+            <com.hq.yunyi2.utils.CircleImageView
+                android:id="@+id/image_user_login"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/user_login"
+                app:border_color="#00000000"
+                app:border_width="0dp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/btn_login_bg"
+                android:onClick="login"
+                android:layout_marginBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="登录"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="注册"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

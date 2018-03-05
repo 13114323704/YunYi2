@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/divider_line_bottom"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/community_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="        联系殡葬礼仪服务部门，购买寿衣，做好准备并协商是否让其跟踪服务事宜。当接到家属来电之时，就应该立即做出反应，马上了解现在病危者所在的位置、病区、病室以及现状，同时根据距离的远近携带物品（包括：寿衣、烧纸、花圈、布置灵堂用品等）。"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:text="推荐"
+        android:textColor="#e0ff0000"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="发表于9:30"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

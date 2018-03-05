@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullRefreshLayout_message_public_person_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:refreshType="material">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/message_public_date1"
+                layout="@layout/message_public_date_layout1" />
+
+            <include
+                android:id="@+id/message_public_date2"
+                layout="@layout/message_public_date_layout2" />
+
+            <include
+                android:id="@+id/message_public_date3"
+                layout="@layout/message_public_date_layout3" />
+
+            <include
+                android:id="@+id/message_public_date4"
+                layout="@layout/message_public_date_layout5" />
+
+            <include
+                android:id="@+id/message_public_date5"
+                layout="@layout/message_public_date_layout4" />
+
+            <include
+                android:id="@+id/message_public_date6"
+                layout="@layout/message_public_date_layout6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="已经没有更多消息啦，去逛逛资讯吧！"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</com.baoyz.widget.PullRefreshLayout>

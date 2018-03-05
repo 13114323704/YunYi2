@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/divider_line_bottom"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/community_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="        殡葬程序之五：出殡准备工作。凡是披麻戴孝者，统称为孝子。逝者的儿女、儿媳、侄儿女、侄媳、干儿女、干儿媳都是孝子。男的头戴一条白布做成头戴布，女的头戴没沿帽（一种孝帽样式），"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:text="热门"
+        android:textColor="#e0ff0000"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="发表于8:55"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

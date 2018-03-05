@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/image_private" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/divider_line_bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:maxLines="1"
+                    android:textColor="#696969"
+                    android:text="个人简介"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:text="5月19日"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#808080"
+                android:text="        我的名字叫李嘉诚，生活在一个平静的乡村里，平时喜欢读一些文学作品，提升自己的文学修养，也会出去打些球等等，来锻炼身体，偶尔也回去健身，我爱生活，生活爱我。" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/item_private_experience_dialog"/>
+
+        <include
+            layout="@layout/item_private_experience_dialog2"/>
+
+        <include
+            layout="@layout/item_private_experience_dialog3"/>
+
+    </LinearLayout>
+</ScrollView>
